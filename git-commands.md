@@ -61,3 +61,25 @@ Example:
 git commit -m "Meaningful message"
 ```
 
+# Viewing Changes
+
+## git diff
+
+What it does: Shows the difference between working directory and staged files. 
+
+Example:
+
+```bash
+git diff
+```
+
+## git log
+
+What it does: Shows commit history. 
+
+Example:
+
+```bash
+git log
+git log --oneline
+```
