@@ -1,8 +1,8 @@
 #Git Commands Reference
 
-# Setup and config
+## Setup and config
 
-## Install Git 
+### Install Git 
 
 What it does:  Installs Git on the system. Example:
 
@@ -11,7 +11,7 @@ sudo apt update
 sudo apt install git -y
 ```
 
-## git config
+### git config
 
 What it does: Sets Git username and email. 
 
@@ -19,9 +19,10 @@ Example: git config --global user.name "Your name"
 
 git config --global user.email "you@example.com"
 
-# Basic Workflow
 
-## git init
+## Basic Workflow
+
+### git init
 
 What it does: Initializes a new Git repository in the current directory. 
 
@@ -31,7 +32,7 @@ Example:
 git init
 ```
 
-## git status
+### git status
 
 What it does: Shows the current state of the working directory and staging area. 
 
@@ -41,7 +42,7 @@ Example:
 git status
 ```
 
-## git add 
+### git add 
 
 What it does: Stages changes for the next commit.
 
@@ -51,7 +52,7 @@ Example:
 git add git-commands.md
 ```
 
-## git commit
+### git commit
 
 What it does: Record staged changes to the repository. 
 
@@ -61,9 +62,9 @@ Example:
 git commit -m "Meaningful message"
 ```
 
-# Viewing Changes
+## Viewing Changes
 
-## git diff
+### git diff
 
 What it does: Shows the difference between working directory and staged files. 
 
@@ -73,7 +74,7 @@ Example:
 git diff
 ```
 
-## git log
+### git log
 
 What it does: Shows commit history. 
 
@@ -83,3 +84,102 @@ Example:
 git log
 git log --oneline
 ```
+
+## Branching 
+
+
+```bash
+git branch
+```
+
+What it does: List all local branches in the current repository.
+
+
+```bash
+git branch <name>
+```
+
+What it does: Creates a new branch at the current commit.
+
+
+```bash
+git switch <name>
+```
+
+What it does: Switches from the current branch to the specified branch
+
+
+```bash
+git switch -c <name>
+```
+
+What it does: Creates a new branch and switches to it in one step.
+
+
+```bash
+git branch -d <name>
+```
+
+What it does: Deletes a branch that has already been merged.
+
+
+## Remotes
+
+
+```bash
+git remote add origin <url>
+```
+What it does: Connect local repo to GitHub
+
+
+```bash
+git remote add upstream <url>
+```  
+
+What it does: Add original repo as upstream (after forking)
+
+
+```bash
+git remote -v
+``` 
+   
+What it does: List all configured remotes
+
+
+### Push & Pull
+
+
+```bash
+git push -u origin <branch>
+```
+   
+What it does: Push branch and set upstream tracking
+
+
+```bash
+git push
+```
+
+What it does: Push to tracked remote (after -u is set)
+
+
+```bash
+git pull origin <branch>
+```       
+
+What it does: Fetch + merge remote changes
+
+
+### Clone & Fork
+
+```bash
+git clone <url>
+```              
+
+What it does: Clone a repository to local machine. 
+
+
+
+
+
+
