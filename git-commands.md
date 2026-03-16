@@ -40,3 +40,24 @@ Example:
 ```bash
 git status
 ```
+
+## git add 
+
+What it does: Stages changes for the next commit.
+
+Example:
+
+```bash
+git add git-commands.md
+```
+
+## git commit
+
+What it does: Record staged changes to the repository. 
+
+Example:
+
+```bash
+git commit -m "Meaningful message"
+```
+
