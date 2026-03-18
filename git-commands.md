@@ -179,6 +179,108 @@ git clone <url>
 What it does: Clone a repository to local machine. 
 
 
+# Merge
+
+```bash
+git merge <branch>
+```                    
+
+What it does: Merge branch into current branch
+
+
+```bash
+git merge --squash <branch>
+```           
+
+What it does:  Squash all commits into one before merging
+
+
+# Rebase
+
+```bash
+git rebase <branch>                   
+```
+ 
+What it does: Rebase current branch onto target branch
+
+
+# Stash
+
+```bash
+git stash push -m "description" 
+```
+
+What it does: Stash with a message
+
+
+```bash
+git stash list                        
+```
+ 
+What it does: List all stashes
+
+
+```bash
+git stash pop 
+```                        
+
+What it does: Apply and remove top stash
+
+
+```bash
+git stash apply stash@{n}
+```         
+
+What it does: Apply specific stash, keeps it in list
+
+
+```bash
+git stash drop stash@{n}            
+```
+ 
+What it does: Delete a specific stash
+
+
+# Cherry-pick
+
+```bash
+git cherry-pick <hash>                
+```
+
+What it does: Apply a specific commit onto current branch
+
+
+```bash
+git cherry-pick --abort               
+```
+
+What it does: Abort cherry-pick in case of conflict
+
+
+```bash
+git cherry-pick --continue            
+```
+
+What it does: Continue after resolving conflict
+
+
+# Useful log
+
+
+```bash
+git log --oneline --graph --all       
+```
+
+What it does: Visualize full branch history
+
+
+```bash
+git log --oneline -5                  
+```
+
+What it does: Show last 5 commits 
+
+
 
 
 
