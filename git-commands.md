@@ -281,7 +281,60 @@ git log --oneline -5
 What it does: Show last 5 commits 
 
 
+# Reset
 
+```bash
+git reset --soft HEAD~1
+```
+
+What it does: Removes the last commit but keeps changes staged
+
+
+```bash
+git reset --mixed HEAD~1
+```
+
+What it does: Removes the last commit and unstages the changes (default reset)
+
+
+```bash
+git reset --hard HEAD~1
+```
+
+What it does: Removes the last commit and deletes changes completely
+
+
+# Revert
+
+
+```bash
+git revert <hash>
+```
+
+What it does: Creates a new commit that undoes the changes of a specific commit
+
+
+```bash
+git revert --continue
+```
+
+What it does: Continue revert after resolving a conflict
+
+
+```bash
+git revert --abort
+```
+ 
+What it does: Abort the revert and go back to state before git revert
+
+
+# Safety net
+
+```bash
+git reflog
+```
+ 
+What it does: Shows all Git actions including commits, resets, and checkouts even after hard reset
 
 
 
